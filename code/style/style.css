@@ -41,9 +41,11 @@ body {
 
 /* ---------------------- Containers -------------------------- */
 .innerBody{
-  padding-left: 15%;
-  padding-right: 15%;
-  width: 70%;
+  padding-left: calc(35% - 288px);
+  padding-right: calc(35% - 288px);
+  /* 288px is 15% of 1920px
+  initially 35% -288px is a 20% padding 
+  if 35% ends up less than 288px then padding is 0 */
 }
 
 .boxContainer{
