@@ -34,7 +34,6 @@ function aboutInnerNav(id) {
   // hide all contentrows
   var aboutRows = document.getElementsByClassName("aboutRow");
   for (var row = 0; row < aboutRows.length; row++){
-    console.log(aboutRows[row]);
     aboutRows[row].style.display = "none";
   }
 
