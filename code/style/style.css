@@ -16,8 +16,8 @@ body {
   overflow: hidden;
   background-color: darkolivegreen;
   /* #294b98; */
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: calc(35% - 288px);
+  padding-right: calc(35% - 288px);
 }
 
 .topnav a {
@@ -39,11 +39,15 @@ body {
   color: white;
 }
 
+
+
 /* ---------------------- Containers -------------------------- */
 .innerBody{
-  padding-left: 15%;
-  padding-right: 15%;
-  width: 70%;
+  padding-left: calc(35% - 288px);
+  padding-right: calc(35% - 288px);
+  /* 288px is 15% of 1920px
+  initially 35% -288px is a 20% padding 
+  if 35% ends up less than 288px then padding is 0 */
 }
 
 .boxContainer{
@@ -84,10 +88,12 @@ body {
 .contentLeft {
   padding-right: 20px;
   width: calc(60% - 25px);
+  height: 100%;
   display: inline-block;
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: #e7e7e7;
+  
   
 }
 
@@ -96,7 +102,7 @@ body {
   float: right;
 }
 
-/* --------------------------------- About page specific -------------------- */
+/* --------------------------------- About page  -------------------- */
 
 #selfPicture {
   height: 170px;
@@ -108,6 +114,80 @@ body {
   width: 120px;
   margin: 20px;
   max-height: 100%;
+}
+
+#drawingContent {
+  background-color: #e4d0af;
+}
+
+.houseRender {
+  width: 32%;
+  display: inline-block;
+}
+
+.animationRender {
+  width: 49%;
+}
+
+.drawing {
+  max-width: 48%;
+  max-height: 300px;
+}
+
+/* .aboutRow {
+  min-height: 450px;
+} */
+
+/* overwrite widths of contentLeft in divs of class aboutRow */
+.aboutRow div.contentLeft {
+  width: calc(40% - 25px);
+}
+.aboutRow div.contentRight {
+  width: 60%;
+}
+
+#aboutInnerNav {
+  overflow: hidden;
+  background-color: darkolivegreen;
+  /* #294b98; */
+  padding-left: calc(35% - 288px);
+  padding-right: calc(35% - 288px);
+}
+
+#aboutInnerNav div {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#aboutInnerNav div:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#aboutInnerNav div.aboutInnerActive {
+  background-color: #f89a3a;
+  color: white;
+}
+
+
+#modeling {
+  display: none;
+}
+
+#drawing {
+  display: none;
+}
+
+#dance {
+  display: none;
+}
+
+#music {
+  display: none;
 }
 
 
