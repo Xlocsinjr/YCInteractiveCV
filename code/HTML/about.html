@@ -56,18 +56,42 @@
       <div class="boxHeader"> My hobbies </div>
       <div class="boxContent" id="hobbySection">
         ==== Nog een navbar hier? : 3dmodeling/animation, drawing, dance, music,  ====
-        <div class="contentRow">
-          <div class="contentLeft">
-            <p>test</p>
+        <div id="aboutInnerNav">
+          <div id="modelingButton" onclick="aboutInnerNav('modelingButton')">3d Modeling / Animation</div>
+          <div id="drawingButton" onclick="aboutInnerNav('drawingButton')">Drawing</div>
+          <div id="danceButton" onclick="aboutInnerNav('danceButton')">test</div>
+          <div id="musicButton" onclick="aboutInnerNav('musicButton')">test</div>
+        </div>
+
+        <hr>
+
+        <div class="contentRow aboutRow" id="modeling">
+          <div class="contentLeft" >
+            <p>modeling</p>
           </div>
           <div class="contentRight"> 
             image or video
           </div>
         </div>
-        <hr>
-        <div class="contentRow">
+        <div class="contentRow aboutRow" id="drawing">
           <div class="contentLeft">
-            <p>test</p>
+            <p>drawing</p>
+          </div>
+          <div class="contentRight"> 
+            image or video
+          </div>
+        </div>
+        <div class="contentRow aboutRow" id="dance">
+          <div class="contentLeft">
+            <p>dance</p>
+          </div>
+          <div class="contentRight"> 
+            image or video
+          </div>
+        </div>
+        <div class="contentRow aboutRow" id="music">
+          <div class="contentLeft">
+            <p>music</p>
           </div>
           <div class="contentRight"> 
             image or video
@@ -82,5 +106,5 @@
 
 
 </body>
-<script src="../scripts/script.js"></script>
+<script src="../scripts/aboutScript.js"></script>
 </html>
