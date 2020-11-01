@@ -7,12 +7,12 @@ function aboutMain() {
 }
 
 function mprogMain() {
-  var contentRows = document.getElementsByClassName("contentRow");
-  console.log(contentRows);
-  for (var i = 0; i < contentRows.length; i++){
-    var row = contentRows[i];
-    matchHeight(row);
-  }
+  // var contentRows = document.getElementsByClassName("contentRow");
+  // console.log(contentRows);
+  // for (var i = 0; i < contentRows.length; i++){
+  //   var row = contentRows[i];
+  //   matchHeight(row);
+  // }
 }
 
 
@@ -80,22 +80,22 @@ function aboutInnerNav(id) {
   if (id == "modelingButton"){
     element = document.getElementById("modeling");
     element.style.display = "block";
-    matchHeight(element);
+    // matchHeight(element);
   } 
   else if (id == "drawingButton"){
     element = document.getElementById("drawing");
     element.style.display = "block";
-    matchHeight(element);
+    // matchHeight(element);
   } 
   else if (id == "danceButton"){
     element = document.getElementById("dance");
     element.style.display = "block";
-    matchHeight(element);
+    // matchHeight(element);
   } 
   else {
     element = document.getElementById("music");
     element.style.display = "block";
-    matchHeight(element);
+    // matchHeight(element);
   }
 }
 
