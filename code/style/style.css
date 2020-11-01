@@ -96,8 +96,8 @@ body {
 }
 
 .contentRight{
-  width: 40%;
-  display: inline-block;
+  width: 39%;
+  float:right;
 }
 
 /* --------------------------------- About page  -------------------- */
@@ -133,7 +133,7 @@ body {
   width: calc(40% - 25px);
 }
 .aboutRow div.contentRight {
-  width: 50%;
+  width: 60%;
 }
 
 #aboutInnerNav {
