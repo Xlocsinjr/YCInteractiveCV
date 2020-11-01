@@ -8,6 +8,7 @@ function main() {
   aboutInnerNav("modelingButton");
 
   var aboutRows = document.getElementsByClassName("aboutRow");
+  console.log(aboutRows);
   for (var i = 0; i < aboutRows.length; i++) {
     console.log(aboutRows[i]);
     helper.matchHeight(aboutRows[i]);
