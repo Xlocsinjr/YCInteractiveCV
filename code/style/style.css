@@ -93,13 +93,11 @@ body {
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: #e7e7e7;
-  
-  
 }
 
 .contentRight{
   width: 40%;
-  float: right;
+  display: inline-block;
 }
 
 /* --------------------------------- About page  -------------------- */
@@ -116,10 +114,6 @@ body {
   max-height: 100%;
 }
 
-#drawingContent {
-  background-color: #e4d0af;
-}
-
 .houseRender {
   width: 32%;
   display: inline-block;
@@ -134,16 +128,12 @@ body {
   max-height: 300px;
 }
 
-/* .aboutRow {
-  min-height: 450px;
-} */
-
 /* overwrite widths of contentLeft in divs of class aboutRow */
 .aboutRow div.contentLeft {
   width: calc(40% - 25px);
 }
 .aboutRow div.contentRight {
-  width: 60%;
+  width: 50%;
 }
 
 #aboutInnerNav {
@@ -189,6 +179,13 @@ body {
 #music {
   display: none;
 }
+
+/* ----------------------------- mprog ---------------------------- */
+
+#dataprocessingImg {
+  max-width: 100%;
+}
+
 
 
 /* -------------------------------------- */

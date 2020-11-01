@@ -1,5 +1,4 @@
-
-
+import * as helper from "../scripts/script.js";
 
 function main() {
   var currentDate = new Date();
@@ -8,6 +7,11 @@ function main() {
 
   aboutInnerNav("modelingButton");
 
+  var aboutRows = document.getElementsByClassName("aboutRow");
+  for (var i = 0; i < aboutRows.length; i++) {
+    console.log(aboutRows[i]);
+    helper.matchHeight(aboutRows[i]);
+  }
 }
 
 
@@ -25,6 +29,9 @@ function calculateAge(date) {
 }
 
 function aboutInnerNav(id) {
+  // implements the functionality of the navbar under the hobbies section on the About page
+  // requires an id argument given by the onclick event in the html
+
   // set all buttons to be classless
   var innerNav = document.getElementById("aboutInnerNav").getElementsByTagName("div");
   for (var nav = 0; nav < innerNav.length; nav++){
@@ -54,6 +61,7 @@ function aboutInnerNav(id) {
     document.getElementById("music").style.display = "block";
   }
 }
+
 
 
 main();
