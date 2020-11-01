@@ -4,6 +4,7 @@ export function matchHeight(element) {
 
   // gathers all divs within the given element
   var elementsList = element.getElementsByTagName("div");
+  console.log(elementsList);
 
   // finds the largest height of the divs
   var maxHeight = 0; 
