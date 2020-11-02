@@ -3,24 +3,18 @@ function aboutMain() {
   var myAge = calculateAge(currentDate);
   document.getElementById("ageStatement").innerHTML = myAge;
 
-  aboutInnerNav("modelingButton");
+  aboutInnerNav(document.getElementById("modelingButton"), document.getElementById("modeling"));
+  aboutInnerVisibility()
 }
 
 function mprogMain() {
-  // var contentRows = document.getElementsByClassName("contentRow");
-  // console.log(contentRows);
-  // for (var i = 0; i < contentRows.length; i++){
-  //   var row = contentRows[i];
-  //   matchHeight(row);
-  // }
+  mprogResize();
 }
 
 
 // =============================== General functions ============================
 
 function matchHeight(element) {
-  console.log("triggered", element);
-
   // gathers all elements within the given element
   var elementsList = element.children;
 
@@ -28,6 +22,10 @@ function matchHeight(element) {
   var maxHeight = 0; 
   for (var i = 0; i < elementsList.length; i++){
     var div = elementsList[i];
+
+    // reset height to fit-content recalculate its minimal height
+    div.style.height = "fit-content";
+
     var divHeight = div.offsetHeight;
     if (divHeight > maxHeight){
       maxHeight = divHeight;
@@ -38,6 +36,10 @@ function matchHeight(element) {
   for (var i = 0; i < elementsList.length; i++){
     elementsList[i].style.height = maxHeight.toString() + "px";
   }
+}
+
+function openInTab(link) {
+  window.open(link, "_blank");
 }
 
 
@@ -56,7 +58,7 @@ function calculateAge(date) {
   return years;
 }
 
-function aboutInnerNav(id) {
+function aboutInnerNav(buttonElement, rowElement) {
   // implements the functionality of the navbar under the hobbies section on the About page
   // requires an id argument given by the onclick event in the html
 
@@ -66,37 +68,33 @@ function aboutInnerNav(id) {
     innerNav[nav].className = "";
   }
   
-  // hide all contentrows
+  // hide all content rows by resetting their class to contentrow and aboutRow
   var aboutRows = document.getElementsByClassName("aboutRow");
   for (var row = 0; row < aboutRows.length; row++){
-    aboutRows[row].style.display = "none";
+    aboutRows[row].className = "contentRow aboutRow";
   }
 
   // set clicked button as active
-  document.getElementById(id).className = "aboutInnerActive";
+  buttonElement.className = "aboutInnerActive";
 
   // set to display corresponding row content
-  var element;
-  if (id == "modelingButton"){
-    element = document.getElementById("modeling");
-    element.style.display = "block";
-    // matchHeight(element);
-  } 
-  else if (id == "drawingButton"){
-    element = document.getElementById("drawing");
-    element.style.display = "block";
-    // matchHeight(element);
-  } 
-  else if (id == "danceButton"){
-    element = document.getElementById("dance");
-    element.style.display = "block";
-    // matchHeight(element);
-  } 
-  else {
-    element = document.getElementById("music");
-    element.style.display = "block";
-    // matchHeight(element);
-  }
+  rowElement.className += " aboutInnerVisible"
+  aboutInnerVisibility()
 }
 
 
+function aboutInnerVisibility() {
+  // resizes the elements within the visible row under the hobbies section so their
+  // heights match.
+  matchHeight(document.getElementsByClassName("aboutInnerVisible")[0]);
+}
+
+// ====================== mprog page ==============================================
+
+function mprogResize() {
+  var contentRows = document.getElementsByClassName("contentRow");
+  for (var i = 0; i < contentRows.length; i++){
+    var row = contentRows[i];
+    matchHeight(row);
+  }
+}

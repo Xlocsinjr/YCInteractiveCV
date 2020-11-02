@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../style/style.css">
 </head>
-<body>
+<body onresize="mprogResize()">
 
 <div class="topnav">
   <a href="index.html">Home</a>
@@ -34,7 +34,10 @@
 
         <div class="contentRow">
           <div class="contentLeft">
-            <p>Introduction in C and Python</p>
+            <h3>Introduction in C and Python</h3>
+            <p>Intro</p>
+            <p>Opdracht</p>
+            <p>afbeelding uitleg</p>
           </div>
           <div class="contentRight"> 
             image or video
@@ -46,10 +49,13 @@
         <div class="contentRow">
           <div class="contentLeft">
             <h3>Data processing</h3>
-            <p>Data processing</p>
+            <p>Intro</p>
+            <p>Opdracht</p>
+            <p>afbeelding uitleg</p>
           </div>
           <div class="contentRight">
-            <img id="dataprocessingImg" src="../../doc/graphics/dataprocessingImg.jpg"/>
+            <img id="dataprocessingImg" src="../../doc/graphics/dataprocessingImg.jpg" class="mprogClickImg"
+            onclick="openInTab('https://xlocsinjr.github.io/DataProcessing/Homework/week_6/HTML/linked.html')"/>
           </div>
         </div>
 
@@ -57,10 +63,14 @@
 
         <div class="contentRow">
           <div class="contentLeft">
-            <p>Programming project</p>
+            <h3>Programming project</h3>
+            <p>Intro</p>
+            <p>Opdracht</p>
+            <p>afbeelding uitleg</p>
           </div>
           <div class="contentRight"> 
-            image or video
+            <img id="dataprocessingImg" src="../../doc/graphics/finalProjectImg.png" class="mprogClickImg"
+            onclick="openInTab('https://xlocsinjr.github.io/progProject/code/HTML/progProject.html')"/>
           </div>
         </div>
       </div>

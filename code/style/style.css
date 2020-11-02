@@ -10,6 +10,7 @@
 body {
   background-color: #F2F2F2;
   font-family: sans-serif;
+  height: fit-content;
 }
 
 .topnav {
@@ -87,7 +88,7 @@ body {
 
 .contentLeft {
   padding-right: 20px;
-  width: calc(60% - 25px);
+  width: calc(45% - 25px);
   height: 100%;
   display: inline-block;
   border-right-style: solid;
@@ -96,8 +97,9 @@ body {
 }
 
 .contentRight{
-  width: 39%;
-  float:right;
+  width: 54%;
+  height: fit-content;
+  float: right;
 }
 
 /* --------------------------------- About page  -------------------- */
@@ -117,10 +119,12 @@ body {
 .houseRender {
   width: 32%;
   display: inline-block;
+  min-width: 150px;
 }
 
 .animationRender {
   width: 49%;
+  min-width: 150px;
 }
 
 .drawing {
@@ -128,12 +132,20 @@ body {
   max-height: 300px;
 }
 
+.aboutRow {
+  display: none;
+}
+
 /* overwrite widths of contentLeft in divs of class aboutRow */
 .aboutRow div.contentLeft {
   width: calc(40% - 25px);
 }
 .aboutRow div.contentRight {
-  width: 60%;
+  width: 59%;
+}
+
+.aboutInnerVisible {
+  display: block;
 }
 
 #aboutInnerNav {
@@ -164,27 +176,24 @@ body {
 }
 
 
-#modeling {
-  display: none;
-}
-
-#drawing {
-  display: none;
-}
-
-#dance {
-  display: none;
-}
-
-#music {
-  display: none;
-}
 
 /* ----------------------------- mprog ---------------------------- */
+
+.mprogClickImg {
+  padding: 1px;
+}
+
+.mprogClickImg:hover {
+  padding: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: green;
+}
 
 #dataprocessingImg {
   max-width: 100%;
 }
+
 
 
 
