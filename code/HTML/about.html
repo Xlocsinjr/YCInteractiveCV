@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../style/style.css">
 </head>
-<body>
+<body onresize="aboutInnerVisibility()">
 
 <div class="topnav">
   <a href="index.html">Home</a>
@@ -56,17 +56,27 @@
       <div class="boxHeader"> My hobbies </div>
       <div class="boxContent" id="hobbySection">
         <div id="aboutInnerNav">
-          <div id="modelingButton" onclick="aboutInnerNav('modelingButton')">3d Modeling / Animation</div>
-          <div id="drawingButton" onclick="aboutInnerNav('drawingButton')">Drawing</div>
-          <div id="danceButton" onclick="aboutInnerNav('danceButton')">Dance</div>
-          <div id="musicButton" onclick="aboutInnerNav('musicButton')">Music</div>
+          <div id="modelingButton" onclick="aboutInnerNav(this, document.getElementById('modeling'))">3d Modeling / Animation</div>
+          <div id="drawingButton" onclick="aboutInnerNav(this, document.getElementById('drawing'))">Drawing</div>
+          <div id="danceButton" onclick="aboutInnerNav(this, document.getElementById('dance'))">Dance</div>
+          <div id="musicButton" onclick="aboutInnerNav(this, document.getElementById('music'))">Music</div>
         </div>
 
         <hr>
 
-        <div class="contentRow aboutRow" id="modeling">
+      <div class="contentRow aboutRow" id="modeling">
           <div class="contentLeft" >
             <h3>3d Modeling / Animation</h3>
+            <p> test </p>
+            <p> test </p>
+            <p> test </p>
+            <p> test </p>
+            <p> test </p>
+            <p> test </p>
+            <p> test </p>
+            <p> test </p>
+            <p> test </p>
+            <p> test </p>
             <p> test </p>
             <p> test </p>
           </div>
@@ -91,7 +101,7 @@
           </div>
           <div id="drawingContent" class="contentRight">
             <img class="drawing" id="draw1" src="../../doc/graphics/ExplorerCV.jpg"/>
-            <img class="drawing" id="draw2" src="../../doc/graphics/RoyalInfantryCV.jpg"/>
+            <!-- <img class="drawing" id="draw2" src="../../doc/graphics/RoyalInfantryCV.jpg"/> -->
             <img class="drawing" id="draw3" src="../../doc/graphics/ShortsCardiganTShirtCV.jpg"/>
             <img class="drawing" id="draw4" src="../../doc/graphics/NewsboyCV.jpg"/>
           </div>
@@ -126,5 +136,5 @@
 
 
 </body>
-<script src="../scripts/aboutScript.js"></script>
+<script src="../scripts/script.js" onload="aboutMain()"></script>
 </html>
