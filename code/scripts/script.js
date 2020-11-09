@@ -11,6 +11,10 @@ function mprogMain() {
   mprogResize();
 }
 
+function physicsMain() {
+  mprogResize();
+}
+
 
 // =============================== General functions ============================
 

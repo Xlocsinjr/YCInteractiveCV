@@ -40,6 +40,11 @@ body {
   color: white;
 }
 
+.fullImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 
 
 /* ---------------------- Containers -------------------------- */
@@ -53,9 +58,6 @@ body {
 
 .boxContainer{
   min-width: 300px;
-  /*height: 322px; /* 300px container height + 2 * 10px margins + 2* 1px borders */
-  /* display: inline-block; */
-  /* height: fit-content; */
   width: 100%;
 }
 
@@ -100,6 +102,12 @@ body {
   width: 54%;
   height: fit-content;
   float: right;
+}
+
+.introBox {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* --------------------------------- About page  -------------------- */
@@ -177,6 +185,9 @@ body {
 
 
 
+/* -------------------------- Physics --------------------------------- */
+
+
 /* ----------------------------- mprog ---------------------------- */
 
 .mprogClickImg {
@@ -193,9 +204,6 @@ body {
 #dataprocessingImg {
   max-width: 100%;
 }
-
-
-
 
 /* -------------------------------------- */
 
