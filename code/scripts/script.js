@@ -118,13 +118,9 @@ function aboutInnerVisibility() {
 // ====================== mprog page ==============================================
 
 function rowResize() {
-  document.onreadystatechange = () => {
-    if (document.readyState === 'complete') {
-      var contentRows = document.getElementsByClassName("contentRow");
-      for (var i = 0; i < contentRows.length; i++){
-        var row = contentRows[i];
-        matchHeight(row);
-      }
-    }
-  };
+  var contentRows = document.getElementsByClassName("contentRow");
+  for (var i = 0; i < contentRows.length; i++){
+    var row = contentRows[i];
+    matchHeight(row);
+  }
 }
