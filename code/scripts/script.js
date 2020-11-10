@@ -69,6 +69,14 @@ function centerProgramText() {
   }
 }
 
+function rowResize() {
+  var contentRows = document.getElementsByClassName("contentRow");
+  for (var i = 0; i < contentRows.length; i++){
+    var row = contentRows[i];
+    matchHeight(row);
+  }
+}
+
 
 
 //  ============================================ About page ===========================
@@ -117,10 +125,3 @@ function aboutInnerVisibility() {
 
 // ====================== mprog page ==============================================
 
-function rowResize() {
-  var contentRows = document.getElementsByClassName("contentRow");
-  for (var i = 0; i < contentRows.length; i++){
-    var row = contentRows[i];
-    matchHeight(row);
-  }
-}
