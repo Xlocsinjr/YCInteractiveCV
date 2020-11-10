@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../style/style.css">
 </head>
-<body>
+<body onresize="physicsResize()">
 
 <div class="topnav">
   <a href="index.html">Home</a>
@@ -18,31 +18,33 @@
   <div class="boxContainer">
     <div class="container">
       <div class="boxHeader"> Physics </div>
-      <div class="boxContent introBox">
-          <p>
-            With an interest in the sciences and in the way the world works I 
-            chose to study Physics. Physics is the study of how the universe 
-            behaves on scales from galaxy clusters to the inside of atoms.
-          </p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="boxHeader"> What I learned </div>
-      <div class="boxContent introBox">
-        <p>
-          Ofcourse in Physics I would learn about our world with courses like 
-          classical mechanics, special relativity, quantum mechanics, astronomy, 
-          thermal physics, and Electrodynamics, but also courses like math, 
-          practicals and research projects.
-        </p>
-        <p>
-          The behaviour of the universe can be described with math and so 
-          math is everywhere in the field of physics. In addition to knowledge 
-          of physics I have also developed mathematical skills in which 
-          critical thinking is important. To solve a problem in math, you 
-          consider what you know and how to apply that knowledge to get to
-          a solution. In that regard, programming is not very different.
-        </p>
+      <div class="boxContent">
+        <div id="physicsIntroRow" class="contentRow">
+          <div class="contentLeft">
+            <p>
+              With an interest in the sciences and in the way the world works I 
+              chose to study Physics. Physics is the study of how the universe 
+              behaves on scales from galaxy clusters to the inside of atoms.
+            </p>
+            <p>
+              Ofcourse, in Physics I would learn about our world with courses like 
+              classical mechanics, special relativity, quantum mechanics, optics, astronomy, 
+              thermal physics, and electrodynamics, but I also had courses like math, 
+              practicals and research projects.
+            </p>
+            <p>
+              The behaviour of the universe can be described with math and so 
+              math is everywhere in the field of physics. In addition to knowledge 
+              of physics I have also developed mathematical skills in which 
+              critical thinking is important. To solve a problem in math, you 
+              consider what you know and how to apply that knowledge to get to
+              a solution. In that regard, programming is not very different.
+            </p>
+          </div>
+          <div class="contentRight"> 
+            image or video
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -53,38 +55,71 @@
     <div class="container">
       <div class="boxHeader"> Programming in physics </div>
       <div class="boxContent">
-        <p>
+        <p class="introBox">
           During my study of Physics I first came into contact with programming. 
-          
+          I have learned to use programming to 
+          apply math, to display data in meaningful ways, and to simulate physical 
+          phenomena.
         </p>
-        <p> ... </p>
         <hr>
 
         <div class="contentRow">
           <div class="contentLeft">
-            <p>Introduction in Python</p>
+            <h3>Introduction in Python</h3>
+            <p>
+              The first time I had learned anything about programming was during the 
+              programming courses of my study of physics. I was taught the basics of 
+              <b>Python</b> like printing statements, mathematical operations, loops, 
+              and defining functions.
+            </p>
+            <p>
+              I would say the main purpose of learning programming in physics is to apply 
+              <b>math</b>, like mathematical operations, equation solving, 
+              or implementing mathematical functions, to analyse (experimental) data to find 
+              meaningful relations or patterns within that data and that was what I was 
+              taught in the programming courses. 
+            </p>
           </div>
-          <div class="contentRight"> 
-            image or video
+          <div class="contentRight programText"> 
+            <div><b>Python</b></div>
           </div>
         </div>
         <hr>
         <div class="contentRow">
           <div class="contentLeft">
-            <p>math/plotting and simulations</p>
-            <p>Trajectory of a charged particle among static point charges.</p>
+            <h3>Plotting</h3>
+            <p>
+              I learned to use programming in Python to create <b>graphs and charts</b> to 
+              display data in way that easily conveys meaningful information from the relations 
+              or patterns within the data. 
+            </p>
+            <p>
+              The image to the right shows a graph that displays the transmission of waves 
+              between two elastically coupled pendula at different frequencies of oscillation 
+              for my bachelor thesis.
+            </p>
+          </div>
+          <div class="contentRight"> 
+            <img class="fullImage" src="../../doc/graphics/2PresultsFbOn.png" />
+          </div>
+        </div>
+        <hr>
+        <div class="contentRow">
+          <div class="contentLeft">
+            <h3>Simulations</h3>
+            <p>
+              Since our universe follows rules that can be described by math 
+              it is also possible to <b>simulate</b> those rules via programming. For example, 
+              I have learned to simulate the trajectory of charged particles among static charges 
+              or the Electric potential field of different charge distributions.
+            </p>
+            <p>
+              To the right is a simulation to show the trajectory of a charged particle inside a 
+              box of static point charges with additional randomly placed static point charges within.
+            </p>
           </div>
           <div class="contentRight"> 
             <img class="fullImage" src="../../doc/graphics/animOutput2.gif" />
-          </div>
-        </div>
-        <hr>
-        <div class="contentRow">
-          <div class="contentLeft">
-            <p>Bachelor thesis</p>
-          </div>
-          <div class="contentRight"> 
-            image or video
           </div>
         </div>
       </div>
@@ -93,5 +128,5 @@
 </div>
 
 </body>
-<script src="../scripts/script.js" onload="physicsMain()"></script>
+<script src="../scripts/script.js" onload="physicsResize()"></script>
 </html>

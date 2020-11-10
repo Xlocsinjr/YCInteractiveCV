@@ -45,6 +45,12 @@ body {
   max-height: 100%;
 }
 
+.programText {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  color: darkolivegreen;
+  text-align: center;
+}
 
 
 /* ---------------------- Containers -------------------------- */
@@ -186,7 +192,12 @@ body {
 
 
 /* -------------------------- Physics --------------------------------- */
-
+#physicsIntroRow div.contentLeft {
+  width: calc(70% - 25px);
+}
+#physicsIntroRow div.contentRight {
+  width: 29%;
+}
 
 /* ----------------------------- mprog ---------------------------- */
 

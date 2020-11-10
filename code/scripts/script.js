@@ -4,15 +4,21 @@ function aboutMain() {
   document.getElementById("ageStatement").innerHTML = myAge;
 
   aboutInnerNav(document.getElementById("modelingButton"), document.getElementById("modeling"));
-  aboutInnerVisibility()
+  aboutInnerVisibility();
 }
 
-function mprogMain() {
-  mprogResize();
+function aboutResize() {
+  aboutInnerVisibility();
 }
 
-function physicsMain() {
-  mprogResize();
+function mprogResize() {
+  rowResize();
+  centerProgramText();
+}
+
+function physicsResize() {
+  rowResize();
+  centerProgramText();
 }
 
 
@@ -46,6 +52,22 @@ function openInTab(link) {
   window.open(link, "_blank");
 }
 
+function centerProgramText() {
+  // Defines padding and height to center text in divs of class programText 
+  var programTexts = document.getElementsByClassName("programText");
+  if (programTexts != null) {
+    for (var i = 0; i < programTexts.length; i++) {
+      // gathers element height and calculates new height
+      // padding + newHeight = old height
+      var textElement = programTexts[i];
+      var height = parseInt(textElement.style.height, 10);
+      var padHeight = (height - 57) / 2;
+      var newHeight = height - padHeight;
+      textElement.style.paddingTop = padHeight.toString() + "px";
+      textElement.style.height = newHeight.toString() + "px";
+    }
+  }
+}
 
 
 
@@ -95,7 +117,7 @@ function aboutInnerVisibility() {
 
 // ====================== mprog page ==============================================
 
-function mprogResize() {
+function rowResize() {
   var contentRows = document.getElementsByClassName("contentRow");
   for (var i = 0; i < contentRows.length; i++){
     var row = contentRows[i];
