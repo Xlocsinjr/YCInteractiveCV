@@ -1,0 +1,8 @@
+=============== About =====================
++ Rewrite about intro
+Recolour inner navbar
+
+
+=============== Physics ===================
++ make/find image of an atom to put next to the introtext
+Show graph of data vs mathematical model instead of T2 Transmission graph
