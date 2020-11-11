@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../style/style.css">
+<script src="../scripts/script.js"></script>
 </head>
 <body onresize="physicsResize()">
 
@@ -119,7 +120,7 @@
             </p>
           </div>
           <div class="contentRight"> 
-            <img class="fullImage" src="../../doc/graphics/animOutput2.gif" />
+            <img class="fullImage" src="../../doc/graphics/animOutput2.gif" onload="physicsResize()"/>
           </div>
         </div>
       </div>
@@ -128,5 +129,5 @@
 </div>
 
 </body>
-<script src="../scripts/script.js" onload="physicsResize()"></script>
+<script>window.onload=physicsResize()</script>
 </html>

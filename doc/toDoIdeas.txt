@@ -1,6 +1,7 @@
 =============== About =====================
 + Rewrite about intro
 Recolour inner navbar
+Click image for fullsize image popup window
 
 
 =============== Physics ===================

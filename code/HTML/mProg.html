@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../style/style.css">
+<script src="../scripts/script.js"></script>
 </head>
 <body onresize="mprogResize()">
 
@@ -97,7 +98,8 @@
           </div>
           <div class="contentRight"> 
             <img id="dataprocessingImg" src="../../doc/graphics/finalProjectImg.png" class="mprogClickImg"
-            onclick="openInTab('https://xlocsinjr.github.io/progProject/code/HTML/progProject.html')"/>
+            onclick="openInTab('https://xlocsinjr.github.io/progProject/code/HTML/progProject.html')"
+             onload="mprogResize()"/>
           </div>
         </div>
       </div>
@@ -106,5 +108,5 @@
 </div>
 
 </body>
-<script src="../scripts/script.js" onload="mprogResize()"></script>
+<script>window.onload=mprogResize()</script>
 </html>
