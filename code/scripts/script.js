@@ -4,10 +4,12 @@ function aboutMain() {
   document.getElementById("ageStatement").innerHTML = myAge;
 
   aboutInnerNav(document.getElementById("modelingButton"), document.getElementById("modeling"));
+  rowResize();
   aboutInnerVisibility();
 }
 
 function aboutResize() {
+  rowResize();
   aboutInnerVisibility();
 }
 

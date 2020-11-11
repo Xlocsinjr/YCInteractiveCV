@@ -119,15 +119,14 @@ body {
 /* --------------------------------- About page  -------------------- */
 
 #selfPicture {
-  height: 170px;
+  height: 250px;
   max-height: 100%;
   margin: 20px;
 }
 
 #selfPicture2 {
-  width: 120px;
+  width: 200px;
   margin: 20px;
-  max-height: 100%;
 }
 
 .houseRender {
@@ -148,6 +147,7 @@ body {
 
 .aboutRow {
   display: none;
+  /* height: 480px; */
 }
 
 /* overwrite widths of contentLeft in divs of class aboutRow */
@@ -187,6 +187,10 @@ body {
 #aboutInnerNav div.aboutInnerActive {
   background-color: #f89a3a;
   color: white;
+}
+
+#danceImg1 {
+  width: 100%;
 }
 
 
