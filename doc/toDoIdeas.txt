@@ -1,5 +1,5 @@
 =============== General ===================
-+ Resizing elements in contentrow still doesnt work reliably = DONE
++ Resizing elements in contentrow still doesnt work reliably on Github pages
 
 
 =============== Homepage ==================
