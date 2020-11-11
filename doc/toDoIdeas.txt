@@ -1,9 +1,15 @@
 =============== General ===================
-+ Resizing elements in contentrow still doesnt work reliably
++ Resizing elements in contentrow still doesnt work reliably = DONE
 
+
+=============== Homepage ==================
++ Image showing different programming languages and certificates
++ Write short general introduction
 
 =============== About =====================
-+ Rewrite about intro
++ Rewrite about intro = DONE
++ make/find icon of a guitar for about page music section
++ Write Why programming? section
 Recolour inner navbar
 Click image for fullsize image popup window
 
@@ -11,3 +17,14 @@ Click image for fullsize image popup window
 =============== Physics ===================
 + make/find image of an atom to put next to the introtext
 Show graph of data vs mathematical model instead of T2 Transmission graph
+
+
+=============== YCNext Traineeship ========
++ Find images of the cerifications
++ Write text
+
+Maybe remove the horizontal lines under the basic training section
+
+=============== Contact ===================
++ Create new contact.html
++ add contact.html to the navbar in the other htmls
