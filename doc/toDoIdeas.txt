@@ -1,3 +1,7 @@
+=============== General ===================
++ Resizing elements in contentrow still doesnt work reliably
+
+
 =============== About =====================
 + Rewrite about intro
 Recolour inner navbar
