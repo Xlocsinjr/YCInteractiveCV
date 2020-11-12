@@ -1,15 +1,15 @@
 =============== General ===================
-+ Resizing elements in contentrow still doesnt work reliably = DONE
++ Resizing elements in contentrow still doesnt work reliably on Github pages
 
 
 =============== Homepage ==================
 + Image showing different programming languages and certificates
-+ Write short general introduction
++ Write short general introduction = DONE
 
 =============== About =====================
 + Rewrite about intro = DONE
 + make/find icon of a guitar for about page music section
-+ Write Why programming? section
++ Write Why programming? section = DONE
 Recolour inner navbar
 Click image for fullsize image popup window
 

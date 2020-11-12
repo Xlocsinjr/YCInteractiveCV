@@ -4,22 +4,22 @@ function aboutMain() {
   document.getElementById("ageStatement").innerHTML = myAge;
 
   aboutInnerNav(document.getElementById("modelingButton"), document.getElementById("modeling"));
-  rowResize();
+  allRowResize();
   aboutInnerVisibility();
 }
 
 function aboutResize() {
-  rowResize();
+  allRowResize();
   aboutInnerVisibility();
 }
 
 function mprogResize() {
-  rowResize();
+  allRowResize();
   centerProgramText();
 }
 
 function physicsResize() {
-  rowResize();
+  allRowResize();
   centerProgramText();
 }
 
@@ -71,7 +71,7 @@ function centerProgramText() {
   }
 }
 
-function rowResize() {
+function allRowResize() {
   var contentRows = document.getElementsByClassName("contentRow");
   for (var i = 0; i < contentRows.length; i++){
     var row = contentRows[i];
