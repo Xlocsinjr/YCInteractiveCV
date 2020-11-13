@@ -13,6 +13,18 @@ body {
   height: fit-content;
 }
 
+b {
+  color: #f89a3a;;
+}
+
+h3 {
+  color: darkolivegreen;
+}
+
+.smallTitle {
+  color: darkolivegreen;
+}
+
 .topnav {
   overflow: hidden;
   background-color: darkolivegreen;
@@ -48,8 +60,11 @@ body {
 .programText {
   font-family: 'Courier New', Courier, monospace;
   font-size: 50px;
-  color: darkolivegreen;
   text-align: center;
+}
+
+.programText b{
+  color: darkolivegreen;
 }
 
 
@@ -115,6 +130,30 @@ body {
   padding-left: 10%;
   padding-right: 10%;
 }
+
+
+/* --------------------------------- Homepage/Index  -------------------- */
+.smallIcon {
+  min-width: 100px;
+  max-width: 48%;
+}
+
+#introTextRow div.contentLeft {
+  width: calc(70% - 25px);
+}
+#introTextRow div.contentRight {
+  width: 29%;
+}
+
+#contactRow div.contentLeft {
+  width: calc(70% - 25px);
+}
+
+#contactRow div.contentRight {
+  width: 29%;
+}
+
+
 
 /* --------------------------------- About page  -------------------- */
 
@@ -193,14 +232,24 @@ body {
   width: 100%;
 }
 
+#guitarIcon {
+  width: 50%;
+}
+
 
 
 /* -------------------------- Physics --------------------------------- */
 #physicsIntroRow div.contentLeft {
   width: calc(70% - 25px);
 }
+
 #physicsIntroRow div.contentRight {
   width: 29%;
+}
+
+#atomIcon {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* ----------------------------- mprog ---------------------------- */

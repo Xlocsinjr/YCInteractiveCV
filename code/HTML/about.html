@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../style/style.css">
+<script src="../scripts/script.js"></script>
 </head>
 <body onresize="aboutResize()">
 
@@ -86,7 +87,7 @@
               consuming hobby but it does deliver impressive results! 
             </p>
           </div>
-          <div class="contentRight" onload="rowResize()"> 
+          <div class="contentRight" onload="allRowResize()"> 
             <div>
               <img class="houseRender" src="../../doc/graphics/VHouseScenes_Render1.png"/>
               <img class="houseRender" src="../../doc/graphics/VTown_3n4_Nightrender.png"/>
@@ -112,7 +113,7 @@
               people rather than objects or landscapes.
             </p>
           </div>
-          <div id="drawingContent" class="contentRight" onload="rowResize()">
+          <div id="drawingContent" class="contentRight" onload="allRowResize()">
             <img class="drawing" id="draw1" src="../../doc/graphics/ExplorerCV.jpg"/>
             <!-- <img class="drawing" id="draw2" src="../../doc/graphics/RoyalInfantryCV.jpg"/> -->
             <img class="drawing" id="draw3" src="../../doc/graphics/ShortsCardiganTShirtCV.jpg"/>
@@ -133,7 +134,7 @@
             </p>
           </div>
           <div class="contentRight"> 
-            <img id="danceImg1" src="../../doc/graphics/danceImg1.jpg"/ onload="rowResize()">
+            <img id="danceImg1" src="../../doc/graphics/danceImg1.jpg"/ onload="allRowResize()">
           </div>
         </div>
         <div class="contentRow aboutRow" id="music">
@@ -149,8 +150,8 @@
               I do not really like performing for an audience.
             </p>
           </div>
-          <div class="contentRight" onload="rowResize()"> 
-            image or video
+          <div class="contentRight" onload="allRowResize()"> 
+            <img id="guitarIcon" src="../../doc/graphics/guitarIcon.png"/>
           </div>
         </div>
       </div>
@@ -162,5 +163,5 @@
 
 
 </body>
-<script src="../scripts/script.js" onload="aboutMain()"></script>
+<script>window.onload=aboutMain()</script>
 </html>
