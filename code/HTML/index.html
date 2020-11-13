@@ -3,8 +3,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../style/style.css">
+<script src="../scripts/script.js"></script>
 </head>
-<body>
+<body onresize="allRowResize()">
 
 <div class="topnav">
   <a class="active" href="index.html">Home</a>
@@ -22,18 +23,27 @@
         <div class="introBox">
           <p>I am Xander Locsin and this is my interactive CV!</p>
           <p>On these pages I aim to show you who am I and what I am capable of.</p>
+          <p>I am currently a Software development Trainee at YoungCapital NEXT.</p>
           <p>You can also find me on <a href="https://www.linkedin.com/in/xander-locsin-2500a21a1/">LinkedIn</a>! </p>
         </div>
         <hr>
-        <div class="introBox">
-          <p>
-            I am a graduate of BSc Physics and Astronomy with an interest in Programming. 
-            Having been educated in a science, I learned to value critical thinking, objectivity and correctness. 
-            Additionally, having completed a Minor in Programming, 
-            I have gained an appreciation for the problem solving way of work of Programming and the challenges that it brings. 
-            Both my study of Physics and Programming have given me experience in applying relevant knowledge and techniques to 
-            solve a problem.
-          </p>
+        <div id="introTextRow" class="contentRow">
+          <div class="contentLeft">
+            <p>
+              I am a graduate of BSc Physics and Astronomy with an interest in Programming and I am a trainee in software 
+              development and DevOps. <br>
+              Having been educated in a science, I learned to value critical thinking, objectivity and correctness. 
+              Additionally, having completed a Minor in Programming, 
+              I have gained an appreciation for the problem solving way of work of Programming and the challenges that it brings. <br>
+              Both my study of Physics and Programming and the training I received as a trainee 
+              have given me experience in applying relevant knowledge and techniques to 
+              solve a problem.
+            </p>
+          </div>
+          <div class="contentRight"> 
+            <img class="smallIcon" src="../../doc/graphics/codeIcon.png"/>
+            <img class="smallIcon" src="../../doc/graphics/atomIcon.png" onload="allRowResize()"/>
+          </div>
         </div>
         <hr>
         <div>
@@ -44,7 +54,29 @@
       </div>
     </div>
   </div>
+  <div class="boxContainer">
+    <div class="container">
+      <div class="boxHeader"> CONTACT </div>
+      <div class="boxContent">
+        <div id="introTextRow" class="contentRow">
+          <div class="contentLeft">
+            <p>
+              I am a trainee at YoungCapital NEXT so contact goes through my accountmanager at YoungCapital, Joris Moonen:
+            </p>
+            <p>
+              <b>Joris Moonen</b><br>
+              e-mail: j.moonen@next.youngcapital.nl
+            </p>
+          </div>
+          <div class="contentRight">
+            <img id="atomIcon" src="../../doc/graphics/mailIcon.png" onload="allRowResize()"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
+<script>window.onload=allRowResize()</script>
 </html>
