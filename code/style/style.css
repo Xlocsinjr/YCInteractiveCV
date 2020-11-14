@@ -67,6 +67,22 @@ h3 {
   color: darkolivegreen;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clickImg {
+  padding: 1px;
+}
+
+.clickImg:hover {
+  padding: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: green;
+}
 
 /* ---------------------- Containers -------------------------- */
 .innerBody{
@@ -138,6 +154,11 @@ h3 {
   max-width: 48%;
 }
 
+.indexIcon {
+  height: 200px;
+  margin: 15px;
+}
+
 #introTextRow div.contentLeft {
   width: calc(70% - 25px);
 }
@@ -153,7 +174,16 @@ h3 {
   width: 29%;
 }
 
+.iconProgramText {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  vertical-align: middle;
+}
 
+.iconProgramText b{
+  color: darkolivegreen;
+}
 
 /* --------------------------------- About page  -------------------- */
 
@@ -254,27 +284,36 @@ h3 {
 
 /* ----------------------------- mprog ---------------------------- */
 
-.mprogClickImg {
-  padding: 1px;
-}
-
-.mprogClickImg:hover {
-  padding: 0px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: green;
-}
-
 #dataprocessingImg {
   max-width: 100%;
 }
 
-/* -------------------------------------- */
+/* --------------------------YCNEXT ------------ */
+#YCNIntro div.contentLeft {
+  width: calc(70% - 25px);
+}
 
-/* .vLine {
-  background-color: darkslategray;
-  width: 1px;
-  height: 100%;
-  display: inline-block;
-} */
-/* floating elements cannot inherit height */
+#YCNIntro div.contentRight {
+  width: 29%;
+}
+
+#YCNEXTIcon {
+  max-width: 80%;
+}
+
+.basicTrainingRow {
+  padding-bottom: 20px;
+}
+
+.progIcon {
+  height: 80px;
+}
+
+.certificateIcon {
+  height: 160px;
+  width: 160px;
+}
+
+#ISTQBIcon {
+  height: 160px;
+}

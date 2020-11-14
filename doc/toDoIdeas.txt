@@ -1,6 +1,7 @@
 =============== General ===================
 + Resizing elements in contentrow still doesnt work reliably on Github pages
 More headers or very short paragraph titles
+Rework program text so it functions as an Icon. centering as display:block and margin:auto
 
 =============== Homepage ==================
 + Image showing different programming languages and certificates
@@ -20,10 +21,12 @@ Show graph of data vs mathematical model instead of T2 Transmission graph
 
 
 =============== YCNext Traineeship ========
-+ Find images of the cerifications
++ Find images of the cerifications = DONE
 + Write text
++ Explain Agile Scrum, Testing and Azure DevOps
++ Write What is DevOps section
 
 Maybe remove the horizontal lines under the basic training section
-
+Make navbar to switch between Basic training and DevOps
 =============== Contact ===================
 + Create new contact.html = DONE: moved to homepage
