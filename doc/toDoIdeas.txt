@@ -2,6 +2,7 @@
 + Resizing elements in contentrow still doesnt work reliably on Github pages
 More headers or very short paragraph titles
 Rework program text so it functions as an Icon. centering as display:block and margin:auto
+   that will make programtext resizing redundant
 
 =============== Homepage ==================
 + Image showing different programming languages and certificates
