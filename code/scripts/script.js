@@ -8,6 +8,11 @@ function aboutMain() {
   aboutInnerVisibility();
 }
 
+function YCNtMain() {
+  innerNav(document.getElementById('devopsButton'), document.getElementById('devops'));
+  allRowResize()
+}
+
 function aboutResize() {
   allRowResize();
   aboutInnerVisibility();
@@ -17,6 +22,7 @@ function resizing() {
   allRowResize();
   centerProgramText();
 }
+
 
 
 // =============================== General functions ============================
@@ -122,3 +128,27 @@ function aboutInnerVisibility() {
 
 // ====================== mprog page ==============================================
 
+// ====================== YCNT page ===============================================
+function innerNav(buttonElement, showElement) {
+  // implements the functionality of the navbar under the DevOps section on the traineeship page
+  // requires an id argument given by the onclick event in the html
+
+  // set all buttons to be classless
+  var innerNavBar = document.getElementsByClassName("innerNav")[0].getElementsByTagName("div");
+  for (var nav = 0; nav < innerNavBar.length; nav++){
+    innerNavBar[nav].className = "";
+  }
+  
+  // hide all nav elements by resetting their styling to none
+  var navElements = document.getElementsByClassName("navElement");
+  for (var nav = 0; nav < navElements.length; nav++){
+    navElements[nav].style.display = "none";
+  }
+
+  // set clicked button as active
+  buttonElement.className = "innerActiveButton";
+
+  // set to display corresponding row content
+  showElement.style.display = "block";
+  resizing();
+}
