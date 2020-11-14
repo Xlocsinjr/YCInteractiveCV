@@ -13,12 +13,7 @@ function aboutResize() {
   aboutInnerVisibility();
 }
 
-function mprogResize() {
-  allRowResize();
-  centerProgramText();
-}
-
-function physicsResize() {
+function resizing() {
   allRowResize();
   centerProgramText();
 }

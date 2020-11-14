@@ -3,8 +3,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../style/style.css">
+<script src="../scripts/script.js"></script>
 </head>
-<body>
+<body onresize="resizing()">
 
 <div class="topnav">
   <a href="index.html">Home</a>
@@ -19,9 +20,19 @@
     <div class="container">
       <div class="boxHeader"> Young Capital NEXT Traineeship </div>
       <div class="boxContent">
-          <p>Introduction section ...</p>
-          <p>...</p>
-          <p>...</p>
+        <div id="YCNIntro" class="contentRow">
+          <div class="contentLeft">
+            <p>
+              Having completed my Physics degree and a minor in programming but wanting to 
+              make a start in the IT industry I decided to apply for a software development 
+              traineeship at <b>YoungCapital NEXT</b>. My training consisted of a basic training 
+              and training in <b>DevOps</b>.
+            </p>
+          </div>
+          <div class="contentRight"> 
+            <img id="YCNEXTIcon" class="center" src="../../doc/graphics/YCNEXTIcon.png"/>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -32,61 +43,86 @@
     <div class="container">
       <div class="boxHeader"> Basic training </div>
       <div class="boxContent">
-        <p> What is the basic training ... </p>
-        <p> ... </p>
+        <div class="introBox">
+          <p>
+            The <b>basic training</b> was a tour of different sides of programming and software development, 
+            in which I got to know many different programming languages and concepts:
+          </p>
+        </div>
+        
         <hr>
 
-        <div class="contentRow">
+        <div class="contentRow basicTrainingRow">
           <div class="contentLeft">
-            <p> Agile Scrum</p>
+            <h3>Agile Scrum</h3>
+            <p><b>Agile Scrum Foundation (ASF)</b> Certificate from EXIN</p>
+            <p>
+              <a href="https://mylogin.exin.nl/polarserver.asp?FrameSet=Minimal&ToolName=CertificateCheckTool&Framed=1&LastName=Locsin%20Jr&CertificateNumber=6345574.20797054&ModuleID=630548"
+              target="_blank">
+                Credential link
+              </a>
+            </p>
           </div>
           <div class="contentRight"> 
-            image or video
+            <img class="certificateIcon center clickImg" src="../../doc/graphics/ASFIcon.png"
+            onclick="openInTab('https://mylogin.exin.nl/polarserver.asp?FrameSet=Minimal&ToolName=CertificateCheckTool&Framed=1&LastName=Locsin%20Jr&CertificateNumber=6345574.20797054&ModuleID=630548')"/>
           </div>
         </div>
-        <hr>
-        <div class="contentRow">
+
+        <div class="contentRow basicTrainingRow">
           <div class="contentLeft">
-            <p>HTML and css</p>
+            <p><b class="smallTitle">HTML and css</b></p>
           </div>
-          <div class="contentRight"> 
-            image or video
+          <div class="contentRight programText"> 
+            <b>< ></b>
           </div>
         </div>
-        <hr>
-        <div class="contentRow">
+
+        <div class="contentRow basicTrainingRow">
           <div class="contentLeft">
-            <p>Java and Object-oriented programming</p>
+            <p>
+              <b class="smallTitle">Java</b><br>
+              Object-oriented programming, inheritance, classes and objects
+            </p>
           </div>
           <div class="contentRight"> 
-            image or video
+            <img class="progIcon center" src="../../doc/graphics/JavaIcon.png" />
           </div>
         </div>
-        <hr>
-        <div class="contentRow">
+
+        <div class="contentRow basicTrainingRow">
           <div class="contentLeft">
-            <p> Full stack, REST, ???</p>
+            <p>
+              <b class="smallTitle">Full stack</b><br>
+              REST, JSON, API, SQL
+            </p>
           </div>
           <div class="contentRight"> 
-            image or video
+            <img class="progIcon center" src="../../doc/graphics/fullStackIcon.png" />
           </div>
         </div>
-        <hr>
-        <div class="contentRow">
+
+        <div class="contentRow basicTrainingRow">
           <div class="contentLeft">
-            <p>Unified Modeling Language, design patterns</p>
+            <p>
+              <b class="smallTitle">Unified Modeling Language</b><br>
+              Design patterns, class diagrams, Use case diagrams, wireframe
+            </p>
           </div>
           <div class="contentRight"> 
-            image or video
+            <img class="progIcon center" src="../../doc/graphics/UMLIcon.png" />
           </div>
         </div>
-        <hr>
-        <div class="contentRow">
+        
+        <div class="contentRow basicTrainingRow">
           <div class="contentLeft">
-            <p> ... ??? ... </p>
+            <p>
+              <b class="smallTitle">Low-code</b><br>
+              Mendix
+            </p>
           </div>
-          <div class="contentRight"> 
-            image or video
+          <div class="contentRight programText"> 
+            <b>Low-code</b>
           </div>
         </div>
       </div>
@@ -95,31 +131,43 @@
     <div class="container">
       <div class="boxHeader"> DevOps </div>
       <div class="boxContent">
-        <p> What is DevOps </p>
-        <p> ... </p>
         <hr>
 
         <div class="contentRow">
           <div class="contentLeft">
-            <p>ISTQB: Testing</p>
+            <h3>Testing</h3>
+            <p><b>Certified Tester Foundation Level (CTFL)</b> certificate by ISTQB® - International Software Testing Qualifications Board.</p>
+            <p>
+              Credential ID: 20-CTFL-178777-12
+            </p>
           </div>
           <div class="contentRight"> 
-            image or video
+            <img id="ISTQBIcon" class="center" src="../../doc/graphics/ISTQBIcon.png"/>
           </div>
         </div>
         <hr>
         <div class="contentRow">
           <div class="contentLeft">
-            <p>AZ-400: Microsoft Azure DevOps Engineer</p>
+            <h3>AZ-400</h3>
+            <p><b>AZ-400 Designing and Implementing Microsoft DevOps Solutions</b> certificate by Microsoft.</p>
+            <p>
+              <a href="https://www.youracclaim.com/badges/5da7164b-98a5-4060-9787-6f11f37332ba?source=linked_in_profile"
+              target="_blank">
+                Credential link </a>
+            </p>
           </div>
           <div class="contentRight"> 
-            image or video
+            <img class="certificateIcon center clickImg" src="../../doc/graphics/AZ400Icon.png"
+            onclick="openInTab('https://www.youracclaim.com/badges/5da7164b-98a5-4060-9787-6f11f37332ba?source=linked_in_profile')"/>
           </div>
         </div>
       </div>
+
+      
     </div>
   </div>
 </div>
 
 </body>
+<script>window.onload=allRowResize()</script>
 </html>
