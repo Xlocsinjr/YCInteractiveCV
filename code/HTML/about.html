@@ -64,16 +64,16 @@
     <div class="container">
       <div class="boxHeader"> My hobbies </div>
       <div class="boxContent" id="hobbySection">
-        <div id="aboutInnerNav">
-          <div id="modelingButton" onclick="aboutInnerNav(this, document.getElementById('modeling'))">3d Modeling / Animation</div>
-          <div id="drawingButton" onclick="aboutInnerNav(this, document.getElementById('drawing'))">Drawing</div>
-          <div id="danceButton" onclick="aboutInnerNav(this, document.getElementById('dance'))">Dance</div>
-          <div id="musicButton" onclick="aboutInnerNav(this, document.getElementById('music'))">Music</div>
+        <div class="innerNav">
+          <div id="modelingButton" onclick="innerNav(this, document.getElementById('modeling'))">3d Modeling / Animation</div>
+          <div id="drawingButton" onclick="innerNav(this, document.getElementById('drawing'))">Drawing</div>
+          <div id="danceButton" onclick="innerNav(this, document.getElementById('dance'))">Dance</div>
+          <div id="musicButton" onclick="innerNav(this, document.getElementById('music'))">Music</div>
         </div>
 
         <hr>
 
-      <div class="contentRow aboutRow" id="modeling">
+      <div class="contentRow aboutRow navElement" id="modeling">
           <div class="contentLeft" >
             <h3>3d Modeling / Animation</h3>
             <p>
@@ -100,7 +100,7 @@
           </div>
         </div>
 
-        <div class="contentRow aboutRow" id="drawing">
+        <div class="contentRow aboutRow navElement" id="drawing">
           <div class="contentLeft">
             <h3>Drawing</h3>
             <p>
@@ -121,7 +121,7 @@
           </div>
         </div>
 
-        <div class="contentRow aboutRow" id="dance">
+        <div class="contentRow aboutRow navElement" id="dance">
           <div class="contentLeft">
             <h3>Dance</h3>
             <p>
@@ -137,7 +137,7 @@
             <img id="danceImg1" src="../../doc/graphics/danceImg1.jpg"/ onload="allRowResize()">
           </div>
         </div>
-        <div class="contentRow aboutRow" id="music">
+        <div class="contentRow aboutRow navElement" id="music">
           <div class="contentLeft">
             <h3>Music</h3>
             <p>

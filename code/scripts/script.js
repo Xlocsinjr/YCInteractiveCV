@@ -3,9 +3,13 @@ function aboutMain() {
   var myAge = calculateAge(currentDate);
   document.getElementById("ageStatement").innerHTML = myAge;
 
-  aboutInnerNav(document.getElementById("modelingButton"), document.getElementById("modeling"));
+  innerNav(document.getElementById("modelingButton"), document.getElementById("modeling"));
   allRowResize();
-  aboutInnerVisibility();
+}
+
+function YCNtMain() {
+  innerNav(document.getElementById('devopsButton'), document.getElementById('devops'));
+  allRowResize()
 }
 
 function aboutResize() {
@@ -17,6 +21,7 @@ function resizing() {
   allRowResize();
   centerProgramText();
 }
+
 
 
 // =============================== General functions ============================
@@ -74,6 +79,30 @@ function allRowResize() {
   }
 }
 
+function innerNav(buttonElement, showElement) {
+  // implements the functionality of the navbar under the DevOps section on the traineeship page
+  // requires an id argument given by the onclick event in the html
+
+  // set all buttons to be classless
+  var innerNavBar = document.getElementsByClassName("innerNav")[0].getElementsByTagName("div");
+  for (var nav = 0; nav < innerNavBar.length; nav++){
+    innerNavBar[nav].className = "";
+  }
+  
+  // hide all nav elements by resetting their styling to none
+  var navElements = document.getElementsByClassName("navElement");
+  for (var nav = 0; nav < navElements.length; nav++){
+    navElements[nav].style.display = "none";
+  }
+
+  // set clicked button as active
+  buttonElement.className = "innerActiveButton";
+
+  // set to display corresponding row content
+  showElement.style.display = "block";
+  allRowResize();
+}
+
 
 
 //  ============================================ About page ===========================
@@ -89,36 +118,7 @@ function calculateAge(date) {
   return years;
 }
 
-function aboutInnerNav(buttonElement, rowElement) {
-  // implements the functionality of the navbar under the hobbies section on the About page
-  // requires an id argument given by the onclick event in the html
-
-  // set all buttons to be classless
-  var innerNav = document.getElementById("aboutInnerNav").getElementsByTagName("div");
-  for (var nav = 0; nav < innerNav.length; nav++){
-    innerNav[nav].className = "";
-  }
-  
-  // hide all content rows by resetting their class to contentrow and aboutRow
-  var aboutRows = document.getElementsByClassName("aboutRow");
-  for (var row = 0; row < aboutRows.length; row++){
-    aboutRows[row].className = "contentRow aboutRow";
-  }
-
-  // set clicked button as active
-  buttonElement.className = "aboutInnerActive";
-
-  // set to display corresponding row content
-  rowElement.className += " aboutInnerVisible"
-  aboutInnerVisibility()
-}
-
-
-function aboutInnerVisibility() {
-  // resizes the elements within the visible row under the hobbies section so their
-  // heights match.
-  matchHeight(document.getElementsByClassName("aboutInnerVisible")[0]);
-}
 
 // ====================== mprog page ==============================================
 
+// ====================== YCNT page ===============================================
