@@ -1,6 +1,7 @@
 =============== General ===================
 + Resizing elements in contentrow still doesnt work reliably on Github pages
 
+Find/take better picture for index and about page
 More headers or very short paragraph titles
 
 =============== Homepage ==================
@@ -28,7 +29,7 @@ Show graph of data vs mathematical model instead of T2 Transmission graph
 + Explain Agile Scrum, Testing and Azure DevOps
 + Write What is DevOps section = DONE
 
-Maybe remove the horizontal lines under the basic training section
-Make navbar to switch between Basic training and DevOps
+Maybe remove the horizontal lines under the basic training section = DONE
+Make navbar to switch between Basic training and DevOps = DONE
 =============== Contact ===================
 + Create new contact.html = DONE: moved to homepage
