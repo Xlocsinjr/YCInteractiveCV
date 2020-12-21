@@ -190,7 +190,7 @@ h3 {
 }
 
 .indexIcon {
-  height: 200px;
+  height: 130px;
   margin: 15px;
 }
 
@@ -218,6 +218,11 @@ h3 {
 
 .iconProgramText b{
   color: darkolivegreen;
+}
+
+#contactIcon {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* --------------------------------- About page  -------------------- */
@@ -310,7 +315,7 @@ h3 {
 }
 
 .progIcon {
-  height: 80px;
+  height: 60px;
 }
 
 .certificateIcon {

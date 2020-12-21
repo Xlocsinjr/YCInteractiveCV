@@ -12,7 +12,7 @@
   <a href="about.html">About me</a>
   <a href="physics.html">Physics</a>
   <a class="active" href="mProg.html">Minor programming</a>
-  <a href="YCNt.html">Young Capital Traineeship</a>
+  <a href="YCNt.html">YoungCapital Traineeship</a>
 </div>
 
 <div class="innerBody">
@@ -53,25 +53,25 @@
           <div class="contentLeft">
             <h3>Data processing</h3>
             <p>
-              In the Data processing course I was taught how to take data and rework that data (with <b>Python</b>) so it can be displayed in various
-               interactive ways. Creating the <b>data-visualisations</b>, like barcharts
+              In the Data processing course I was taught how to rework data (with <b>Python</b>) so it can be displayed in 
+              interactive ways. Creating the <b>data-visualisations</b>, like barcharts
                and line-graphs, and its interactive elements were done with <b>javascript</b> and the javascript D3.js library.
             </p>
             <p>
-              An example of what I learned to make can be seen in the image to the right. You can click
+              An example can be seen in the image to the right. You can click
                <a href="https://xlocsinjr.github.io/DataProcessing/Homework/week_6/HTML/linked.html" target="_blank">here</a>
                or on the image to open the interactive data visualisation in a new tab.
             </p>
             <p>
-              A python script reordered temperature data from weather stations into a json file which a javascript script displayed in
-               a barchart and a calender view. Hovering over the calender squares and the barchart bars displays that element's
-               specific data. You can also click on a date on the calendar to show the minimum, average and maximum
-               temperature measured at the various weather stations at that date in the bar chart.
+              Hovering over the calender squares and the barchart bars displays that element's
+               specific data. Click on a date on the calendar to show that date's temperatures 
+              in the barchart.
             </p>
           </div>
           <div class="contentRight">
             <img id="dataprocessingImg" src="../../doc/graphics/dataprocessingImg.jpg" class="clickImg"
-            onclick="openInTab('https://xlocsinjr.github.io/DataProcessing/Homework/week_6/HTML/linked.html')"/>
+          onclick="openInTab('https://xlocsinjr.github.io/DataProcessing/Homework/week_6/HTML/linked.html');"
+          onload="matchHeight(this.parentNode.parentNode);"/>
           </div>
         </div>
 
@@ -99,7 +99,7 @@
           <div class="contentRight"> 
             <img id="dataprocessingImg" src="../../doc/graphics/finalProjectImg.png" class="clickImg"
             onclick="openInTab('https://xlocsinjr.github.io/progProject/code/HTML/progProject.html')"
-             onload="resizing()"/>
+            onload="matchHeight(this.parentNode.parentNode);"/>
           </div>
         </div>
       </div>

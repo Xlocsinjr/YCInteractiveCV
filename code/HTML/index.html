@@ -12,56 +12,64 @@
   <a href="about.html">About me</a>
   <a href="physics.html">Physics</a>
   <a href="mProg.html">Minor programming</a>
-  <a href="YCNt.html">Young Capital Traineeship</a>
+  <a href="YCNt.html">YoungCapital Traineeship</a>
 </div>
 
 <div class="innerBody">
   <div class="boxContainer">
     <div class="container">
-      <div class="boxHeader"> </div>
+      <div class="boxHeader"> My interactive CV</div>
       <div class="boxContent">
-        <div class="introBox">
-          <p>I am Xander Locsin and this is my interactive CV!</p>
-          <p>On these pages I aim to show you who am I and what I am capable of.</p>
-          <p>I am currently a Software development Trainee at YoungCapital NEXT.</p>
-          <p>You can also find me on <a href="https://www.linkedin.com/in/xander-locsin-2500a21a1/">LinkedIn</a>! </p>
-        </div>
-        <hr>
-        <div id="introTextRow" class="contentRow">
+        <div class="contentRow">
           <div class="contentLeft">
             <p>
-              I am a graduate of BSc Physics and Astronomy with an interest in Programming and I am a trainee in software 
-              development and DevOps. <br>
-              Having been educated in a science, I learned to value critical thinking, objectivity and correctness. 
-              Additionally, having completed a Minor in Programming, 
-              I have gained an appreciation for the problem solving way of work of Programming and the challenges that it brings. <br>
-              Both my study of Physics and Programming and the training I received as a trainee 
-              have given me experience in applying relevant knowledge and techniques to 
-              solve a problem.
+              I am Xander Locsin and this is my interactive CV! 
+              On these pages I aim to show you who I am and what I am capable of.
             </p>
+            <p>I am currently a Software development Trainee at YoungCapital NEXT.</p>
+            <p>You can also find me on <a href="https://www.linkedin.com/in/xander-locsin-2500a21a1/">LinkedIn</a>. </p>
+            <p><b>Contact information can be found below!</b></p>
           </div>
           <div class="contentRight"> 
-            <img class="smallIcon" src="../../doc/graphics/codeIcon.png"/>
-            <img class="smallIcon" src="../../doc/graphics/atomIcon.png" onload="allRowResize()"/>
+            <img id="selfPicture2" src="../../doc/graphics/selfPicture2.png" onload="matchHeight(this.parentNode.parentNode);"/>
+            <img id="selfPicture2" src="../../doc/graphics/YCNEXTIcon.png"/>
           </div>
-        </div>
-        <hr>
-        <div class="introBox">
-          <img class="indexIcon" src="../../doc/graphics/Hippo_JPG-uvalogo_tag_p.jpg"/>
-          <img class="indexIcon" src="../../doc/graphics/YCNEXTIcon.png"/>
-          <img class="indexIcon clickImg" src="../../doc/graphics/ASFIcon.png"
-            onclick="openInTab('https://mylogin.exin.nl/polarserver.asp?FrameSet=Minimal&ToolName=CertificateCheckTool&Framed=1&LastName=Locsin%20Jr&CertificateNumber=6345574.20797054&ModuleID=630548')"/>
-          <img class="indexIcon" src="../../doc/graphics/ISTQBIcon.png"/>
-          <img class="indexIcon clickImg" src="../../doc/graphics/AZ400Icon.png"
-            onclick="openInTab('https://www.youracclaim.com/badges/5da7164b-98a5-4060-9787-6f11f37332ba?source=linked_in_profile')"/>
-          <div class="indexIcon iconProgramText"><b>Python</b></div>
-          <div class="indexIcon iconProgramText"><b> < > </b></div>
-          <div class="indexIcon iconProgramText"><b> C</b></div>
-          <img class="indexIcon" src="../../doc/graphics/JavaIcon.png"/>
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="boxHeader"> </div>
+      <div class="boxContent introBox">
+        <p>
+          I am a graduate of BSc Physics and Astronomy with an interest in Programming and I am a trainee in software 
+          development and DevOps. <br>
+          Having been educated in a science, I learned to value critical thinking, objectivity and correctness. 
+          Additionally, having completed a Minor in Programming, 
+          I have gained an appreciation for the problem solving way of work of Programming and the challenges that it brings. <br>
+          Both my study of Physics and Programming and the training I received as a trainee 
+          have given me experience in applying relevant knowledge and techniques to 
+          solve a problem.
+        </p>
+      </div>
+    </div>
   </div>
+  <hr>
+  
+  <div class="indexIcon iconProgramText"><b>DevOps</b></div>
+  <img class="indexIcon" src="../../doc/graphics/codeIcon.png"/>
+  <img class="indexIcon" src="../../doc/graphics/atomIcon.png"/>
+  <div class="indexIcon iconProgramText"><b>Python</b></div>
+  <div class="indexIcon iconProgramText"><b> < > </b></div>
+  <div class="indexIcon iconProgramText"><b> C</b></div>
+  <img class="indexIcon" src="../../doc/graphics/JavaIcon.png"/>
+  <img class="indexIcon" src="../../doc/graphics/Hippo_JPG-uvalogo_tag_p.jpg"/>
+  <img class="indexIcon" src="../../doc/graphics/YCNEXTIcon.png"/>
+  <img class="indexIcon clickImg" src="../../doc/graphics/ASFIcon.png"
+    onclick="openInTab('https://mylogin.exin.nl/polarserver.asp?FrameSet=Minimal&ToolName=CertificateCheckTool&Framed=1&LastName=Locsin%20Jr&CertificateNumber=6345574.20797054&ModuleID=630548')"/>
+  <img class="indexIcon clickImg" src="../../doc/graphics/AZ400Icon.png"
+    onclick="openInTab('https://www.youracclaim.com/badges/5da7164b-98a5-4060-9787-6f11f37332ba?source=linked_in_profile')"/>
+
   <div class="boxContainer">
     <div class="container">
       <div class="boxHeader"> CONTACT </div>
@@ -84,7 +92,7 @@
             </table>
           </div>
           <div class="contentRight">
-            <img id="atomIcon" src="../../doc/graphics/mailIcon.png" onload="allRowResize()"/>
+            <img id="contactIcon" src="../../doc/graphics/mailIcon.png" onload="matchHeight(this.parentNode.parentNode);"/>
           </div>
         </div>
       </div>
